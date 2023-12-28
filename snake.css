@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:burlywood;
+}
+
+canvas{
+    border: 1px solid black;
+}
+.head{
+    font-size: larger;
+    font-weight: 600;
+    color: orangered;
+    padding: 10px;
+}
+h1{
+    color: green;
+    font-weight: bolder;
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.score{
+    font-size: xx-large;
+    font-weight: bolder;
+}
