@@ -26,3 +26,29 @@ h1{
     font-size: xx-large;
     font-weight: bolder;
 }
+
+.keys{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up{
+    cursor: pointer;
+    position: relative;
+    bottom: 29px;
+}
+.Down{
+    position: relative;
+    top:29px;
+    cursor: pointer;
+    right: 25px;
+}
+.right{
+    position: relative;
+    left: -25px;
+    cursor: pointer;
+}
+.Left{
+    cursor: pointer;
+}
