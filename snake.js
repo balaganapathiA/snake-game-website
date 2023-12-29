@@ -1,6 +1,7 @@
 const board=document.getElementById('board')
 const context = board.getContext('2d')
 const score = document.querySelector('.value')
+
 let s=0;
 var UNIT=25;
 let snake=[
@@ -88,11 +89,11 @@ function keypress(event){
         loop();
     }
     switch(true){
-        case(event.keyCode==37 && xvel!=25):
+        case(event.keyCode==37 && xvel!=25 || event.click=='up' ):
             xvel=-25;
             yvel=0;
             break;
-            case(event.keyCode==39 && xvel!=-25):
+        case(event.keyCode==39 && xvel!=-25):
             xvel=25;
             yvel=0;
             break;
@@ -117,8 +118,8 @@ function gameover(){
     }
 }
 const up = document.querySelector(".up")
-const down = document.querySelector(".Down")
-const left = document.querySelector(".Left")
+const down = document.querySelector(".down")
+const left = document.querySelector(".left")
 const right = document.querySelector(".right")
 const keys = document.querySelector(".keys")
 
