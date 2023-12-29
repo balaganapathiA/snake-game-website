@@ -116,3 +116,51 @@ function gameover(){
         break;
     }
 }
+const up = document.querySelector(".up")
+const down = document.querySelector(".Down")
+const left = document.querySelector(".Left")
+const right = document.querySelector(".right")
+const keys = document.querySelector(".keys")
+
+up.addEventListener('click',()=>{
+    console.log('clicked')
+    if(!start){
+        start=true;
+        loop();
+    }
+    if (yvel!=25){
+    yvel=-25;
+    xvel=0;
+    }
+})
+
+down.addEventListener('click',()=>{
+    if(!start){
+        start=true;
+        loop();
+    }
+    if (yvel!=-25){
+    yvel=25;
+    xvel=0;
+    }
+})
+left.addEventListener('click',()=>{
+    if(!start){
+        start=true;
+        loop();
+    }
+    if(xvel!=25){
+    xvel=-25;
+    yvel=0;
+    }
+})
+right.addEventListener('click',()=>{
+    if(!start){
+        start=true;
+        loop();
+    }
+    if(xvel!=-25){
+    xvel=25;
+    yvel=0;
+    }
+})
