@@ -77,7 +77,7 @@ function loop(){
         context.textAlign="center";
         context.fillText("Game Over!!",250,250);
         context.font="20px roboto";
-        context.fillText("press f5 and try again...",250,270)
+        context.fillText("refresh and try again...",250,270)
 
 
     }
